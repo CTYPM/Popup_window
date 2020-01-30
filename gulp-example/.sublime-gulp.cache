@@ -1,0 +1,1 @@
+{"C:\\Учеба\\gulp-example\\gulpfile.js":{"sha1":"f46cb2de5fd533592e6f3501de9599a5a0472a78","tasks":{"sass":{"name":"sass","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"sass"}}}}

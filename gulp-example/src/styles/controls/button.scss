@@ -1,0 +1,72 @@
+.popup_button {
+	background: linear-gradient(to top, $control_gradient__1, $control_gradient__2);
+	border: $controls_border 1px solid;
+	border-radius: 5px;
+	height: 30px;
+	margin: 0 0 0 10px;
+	color: $text_color;
+	width: 80px;
+	outline: none;
+	line-height: 30px;
+	padding: 0;
+	position: relative;
+}
+
+.popup_button:active {
+	background: linear-gradient(to bottom, $control_gradient__1, $control_gradient__2);
+}
+
+.fieldset_button {
+	width: 55px;
+}
+
+.button__execute {
+	background: linear-gradient(to top, $control_exec_gradient__1, $control_exec_gradient__2);
+	border: $controls_exec_border 1px solid;
+}
+
+.button__execute:active {
+	background: linear-gradient(to bottom, $control_exec_gradient__1, $control_exec_gradient__2);
+}
+
+.button__execute:disabled {
+	background: linear-gradient(to top, lighten($control_exec_gradient__1, 10%), lighten($control_exec_gradient__2, 10%));
+	border: lighten($controls_exec_border,10%) 1px solid;
+	color: lighten($text_color, 20%);
+}
+
+.table_button {
+	border: none;
+	width: 44px;
+	height: 33px;
+	outline: none;
+	box-shadow: none;
+	background: $table_background;
+}
+
+.table_button:active {
+  	box-shadow: inset -1px -1px 1px darken($table_background, 20%);
+}
+
+.button_ico{
+	height: 14px;
+	width: 14px;
+	margin: 0;
+	border:none;
+	display: inline-block;
+	position: relative;
+	top:2px;
+}
+
+.button_ico__save{
+	background: url('src/savemark.svg') no-repeat;
+    background-size: 120% 120%;
+    background-position: center;
+}
+
+.button_ico__cancel{
+	background: url('src/cancelmark.svg') no-repeat;
+    background-size: 120% 120%;
+    background-position: center;
+}
+
