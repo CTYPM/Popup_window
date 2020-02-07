@@ -1,4 +1,44 @@
 /*Custom variables*/
+.ico__cancel {
+  border: none;
+  background: url("src/cancelmark.svg") no-repeat;
+  background-position: center; }
+
+.ico__save {
+  border: none;
+  background: url("src/savemark.svg") no-repeat;
+  background-position: center; }
+
+.ico__check1 {
+  border: 1px solid #72787E;
+  border-color: #A9A9A9;
+  border-radius: 3px;
+  background: linear-gradient(to top, #DFDFDF, #FDFDFD); }
+
+.ico__type1 {
+  border: none;
+  background: url("src/users.svg") no-repeat;
+  background-position: center; }
+
+.ico__type2 {
+  border: none;
+  background: url("src/user.svg") no-repeat;
+  background-position: center; }
+
+.ico__edit {
+  border: none;
+  background: url("src/editmark.svg") no-repeat;
+  background-position: center; }
+
+.big_ico {
+  background-size: 120% 120%; }
+
+.standart_ico {
+  background-size: 100% 100%; }
+
+.small_ico {
+  background-size: 60% 60%; }
+
 .popup_wrapper {
   display: flex;
   align-items: center;
@@ -32,6 +72,9 @@
   margin: 26px 0 3px 0;
   text-align: center; }
 
+.popup_header__number {
+  color: #8CBAE4; }
+
 .fieldset {
   margin: 0 20px 10px 20px;
   padding: .35em 12px 15px;
@@ -41,7 +84,28 @@
 .fieldset_text {
   margin: 8px 0 3px 0; }
 
-.fieldset__input {
+.input_warning_wrapper {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 6px 0 0; }
+
+.input_warning_img {
+  position: relative;
+  top: -5px;
+  left: -9px;
+  -webkit-transform: scale(0.5);
+  /*Chrome*/
+  -moz-transform: scale(0.5);
+  /*Firefox*/
+  -o-transform: scale(0.5);
+  /*Opera*/
+  transform: scale(0.5);
+  /*Default*/ }
+
+.input_field {
   color: #818181;
   width: 142px;
   height: 26px;
@@ -53,53 +117,36 @@
   background: #FAFAFA;
   box-shadow: inset 0 2px 5px #e1e1e1; }
 
-.fieldset__warning_wrapper {
-  position: relative;
-  top: 2px;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin: 0 6px 0 0; }
-
-.fieldset__warning_img {
-  position: relative;
-  top: -5px;
-  left: -8px;
-  transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  -o-transform: scale(0.5);
-  -moz-transform: scale(0.5); }
-
-.popup_table {
+.table {
   margin: 12px 0 18px 20px;
   table-layout: fixed;
   border-collapse: collapse;
   border: 1px solid #A9A9A9; }
 
-.popup_table__col1 {
+.table__col1 {
   width: 38px; }
 
-.popup_table__col2 {
+.table__col2 {
   width: 64px; }
 
-.popup_table__col3 {
+.table__col3 {
   width: 182px; }
 
-.popup_table__col4 {
+.table__col4 {
   width: 150px; }
 
-.popup_table__col5 {
+.table__col5 {
   width: 45px; }
 
-.popup_table__head {
+.table__head {
+  color: #FAFAFA;
   padding: 4px 7px;
   text-align: left;
-  color: #FAFAFA;
   border: 1px solid #72787E;
   border-top: 0 solid #9BA2A8;
   background: linear-gradient(to top, #72787E, #9BA2A8); }
 
-.popup_table__cell {
+.table__cell {
   font-weight: normal;
   padding: 6px 7px 7px 7px;
   border: 1px solid #A9A9A9;
@@ -113,51 +160,26 @@
   text-align: center; }
 
 .table_access__ref {
-  text-decoration: none;
   color: #818181;
+  text-decoration: none;
   border-bottom: 1px dotted #818181; }
 
 .table_ico {
+  position: relative;
+  top: 1px;
   display: inline-block;
   width: 15px;
   height: 15px;
-  margin: 0;
-  border: none; }
-
-.ico__check1 {
-  border: 1px solid #72787E;
-  border-color: #A9A9A9;
-  border-radius: 3px;
-  background: linear-gradient(to top, #DFDFDF, #FDFDFD); }
-
-.ico__type1 {
-  background: url("src/users.svg") no-repeat;
-  background-position: center;
-  background-size: 100% 100%; }
-
-.ico__type2 {
-  background: url("src/user.svg") no-repeat;
-  background-position: center;
-  background-size: 100% 100%; }
-
-.ico__edit {
-  background: url("src/editmark.svg") no-repeat;
-  background-position: center;
-  background-size: 100% 100%; }
-
-.ico__cancel {
-  background: url("src/cancelmark.svg") no-repeat;
-  background-position: center;
-  background-size: 100% 100%; }
+  margin: 0; }
 
 .table__fifth_cell {
   padding: 0; }
 
-.fieldset_select__wrapper {
+.select_wrapper {
   position: relative;
   display: inline-block; }
 
-.fieldset__select {
+.select_field {
   color: #818181;
   display: inline-block;
   width: 100%;
@@ -172,7 +194,7 @@
   -moz-appearance: none;
   /* Firefox */ }
 
-.fieldset_select__wrapper::after {
+.select_wrapper::after {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -193,39 +215,39 @@
 .select_wrapper__small {
   width: 95px; }
 
-.popup_fieldset__select:focus {
+.select_field:focus {
   outline: none; }
 
-.popup_button {
+.main_button {
   line-height: 30px;
+  color: #818181;
   position: relative;
   width: 80px;
   height: 30px;
   margin: 0 0 0 10px;
   padding: 0;
-  color: #818181;
   border: 1px solid #A9A9A9;
   border-radius: 5px;
   outline: none;
   background: linear-gradient(to top, #DFDFDF, #FDFDFD); }
 
-.popup_button:active {
+.main_button:active {
   background: linear-gradient(to bottom, #DFDFDF, #FDFDFD); }
 
-.fieldset_button {
-  width: 55px; }
-
-.button__execute {
+.main_button__execute {
   border: 1px solid #8CBAE4;
   background: linear-gradient(to top, #8CBAE4, #AFDBF9); }
 
-.button__execute:active {
+.main_button__execute:active {
   background: linear-gradient(to bottom, #8CBAE4, #AFDBF9); }
 
-.button__execute:disabled {
+.main_button__execute:disabled {
   color: #b4b4b4;
   border: 1px solid #b5d3ee;
   background: linear-gradient(to top, #b5d3ee, #def0fd); }
+
+.short_button {
+  width: 55px; }
 
 .table_button {
   width: 44px;
@@ -241,23 +263,13 @@
 .button_ico {
   position: relative;
   top: 2px;
+  left: -3px;
   display: inline-block;
   width: 14px;
   height: 14px;
-  margin: 0;
-  border: none; }
+  margin: 0; }
 
-.button_ico__save {
-  background: url("src/savemark.svg") no-repeat;
-  background-position: center;
-  background-size: 120% 120%; }
-
-.button_ico__cancel {
-  background: url("src/cancelmark.svg") no-repeat;
-  background-position: center;
-  background-size: 120% 120%; }
-
-.footer_button__first {
+.first_button {
   margin-left: 0; }
 
 .footer {
@@ -267,10 +279,10 @@
   width: 100%;
   height: 33px; }
 
-.popup_close_button {
+.close_button {
   position: relative;
-  top: -464px;
-  left: 508px;
+  top: -463px;
+  left: 507px;
   width: 23px;
   height: 23px;
   padding: 0;
@@ -279,13 +291,9 @@
   outline: none;
   background: #F1F2F4; }
 
-.button_ico__close {
-  width: 22px;
-  height: 22px;
-  border: none;
-  background: url("src/cancelmark.svg") no-repeat;
-  background-position: center;
-  background-size: 60% 60%; }
-
-.popup_close_button:active {
+.close_button:active {
   box-shadow: inset -1px -1px 1px #b8bdc7; }
+
+.close_button__ico {
+  width: 22px;
+  height: 22px; }

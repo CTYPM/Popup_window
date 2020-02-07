@@ -1,0 +1,48 @@
+.ico__cancel{
+    border: none;
+    background: url('src/cancelmark.svg') no-repeat;
+    background-position: center;
+}
+
+.ico__save{
+    border: none;
+    background: url('src/savemark.svg') no-repeat;
+    background-position: center;
+}
+
+.ico__check1{
+    border: 1px solid $table_th_border_color;
+    border-color: $controls_border;
+    border-radius: 3px;
+    background: linear-gradient(to top, $control_gradient__1, $control_gradient__2);
+}
+
+.ico__type1{
+    border: none;
+    background: url('src/users.svg') no-repeat;
+    background-position: center;
+}
+
+.ico__type2{
+    border: none;
+    background: url('src/user.svg') no-repeat;
+    background-position: center;
+}
+
+.ico__edit{
+    border: none;
+    background: url('src/editmark.svg') no-repeat;
+    background-position: center;
+}
+
+.big_ico{
+    background-size: 120% 120%;
+}
+
+.standart_ico{
+    background-size: 100% 100%;
+}
+
+.small_ico{
+    background-size: 60% 60%;
+}

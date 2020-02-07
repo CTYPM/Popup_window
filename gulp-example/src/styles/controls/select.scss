@@ -1,9 +1,9 @@
-.fieldset_select__wrapper{
+.select_wrapper{
     position: relative;
     display: inline-block;
 }
 
-.fieldset__select{
+.select_field{
     color: $text_color;
     display: inline-block;
     width: 100%;
@@ -16,7 +16,7 @@
        -moz-appearance: none;/* Firefox */
 }
 
-.fieldset_select__wrapper::after{
+.select_wrapper::after{
     position: absolute;
     z-index: 1;
     top: 0;
@@ -40,6 +40,6 @@
     width: 95px;
 }
 
-.popup_fieldset__select:focus{
+.select_field:focus{
     outline: none;
 }

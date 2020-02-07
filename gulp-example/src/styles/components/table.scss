@@ -1,40 +1,40 @@
-.popup_table{
+.table{
     margin: 12px 0 18px 20px;
     table-layout: fixed;
     border-collapse: collapse;
     border: 1px solid $controls_border;
 }
 
-.popup_table__col1{
+.table__col1{
     width: 38px;
 }
 
-.popup_table__col2{
+.table__col2{
     width: 64px;
 }
 
-.popup_table__col3{
+.table__col3{
     width: 182px;
 }
 
-.popup_table__col4{
+.table__col4{
     width: 150px;
 }
 
-.popup_table__col5{
+.table__col5{
     width: 45px;
 }
 
-.popup_table__head{
+.table__head{
+    color: $table_th_color;
     padding: 4px 7px;
     text-align: left;
-    color: $table_th_color;
     border: 1px solid $table_th_border_color;
     border-top: 0 solid $table_th_gradient__2;
     background: linear-gradient(to top, $table_th_gradient__1, $table_th_gradient__2);
 }
 
-.popup_table__cell{
+.table__cell{
     font-weight: normal;
     padding: 6px 7px 7px 7px;
     border: 1px solid $controls_border;
@@ -51,48 +51,18 @@
 }
 
 .table_access__ref{
-    text-decoration: none;
     color: $text_color;
+    text-decoration: none;
     border-bottom: 1px dotted $text_color;
 }
 
 .table_ico{
+    position: relative;
+    top: 1px;
     display: inline-block;
     width: 15px;
     height: 15px;
     margin: 0;
-    border: none;
-}
-
-.ico__check1{
-    border: 1px solid $table_th_border_color;
-    border-color: $controls_border;
-    border-radius: 3px;
-    background: linear-gradient(to top, $control_gradient__1, $control_gradient__2);
-}
-
-.ico__type1{
-    background: url('src/users.svg') no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-}
-
-.ico__type2{
-    background: url('src/user.svg') no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-}
-
-.ico__edit{
-    background: url('src/editmark.svg') no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-}
-
-.ico__cancel{
-    background: url('src/cancelmark.svg') no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
 }
 
 .table__fifth_cell{

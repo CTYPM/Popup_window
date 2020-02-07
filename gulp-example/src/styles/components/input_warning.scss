@@ -1,0 +1,18 @@
+.input_warning_wrapper{
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 6px 0 0;
+}
+
+.input_warning_img{
+    position: relative;
+    top: -5px;
+    left: -9px;
+    -webkit-transform: scale(.5); /*Chrome*/
+       -moz-transform: scale(.5); /*Firefox*/
+         -o-transform: scale(.5); /*Opera*/
+            transform: scale(.5); /*Default*/
+}
