@@ -1,0 +1,31 @@
+.fieldset__input{
+    color: $text_color;
+    width: 142px;
+    height: 26px;
+    margin: 0 7px 0 7px;
+    padding: 0 3px;
+    border: 1px solid $controls_border;
+    border-radius: 5px;
+    outline: none;
+    background: $input_background;
+    box-shadow: inset 0 2px 5px darken($input_background, 10%);
+}
+
+.fieldset__warning_wrapper{
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 6px 0 0;
+}
+
+.fieldset__warning_img{
+    position: relative;
+    top: -5px;
+    left: -8px;
+    -webkit-transform: scale(.5); /*Chrome*/
+       -moz-transform: scale(.5); /*Firefox*/
+         -o-transform: scale(.5); /*Opera*/
+            transform: scale(.5); /*Default*/
+}

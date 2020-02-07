@@ -1,25 +1,31 @@
-.popup_close_button{
-	height:23px;
-	width:23px;
-	border: $controls_border 1px solid;
-	border-radius: 13px;
-	background: $popup_background;
-	padding: 0;
-	outline: none;
-	position:relative;
-	top:-464px;
-	left:508px;
+.popup_close_button
+{
+    position: relative;
+    top: -464px;
+    left: 508px;
+
+    width: 23px;
+    height: 23px;
+    padding: 0;
+
+    border: 1px solid $controls_border ;
+    border-radius: 13px;
+    outline: none;
+    background: $popup_background;
 }
 
-.button_ico__close{
-	height:22px;
-	width:22px;
-	background: url('src/cancelmark.svg') no-repeat;
-    background-size: 60% 60%;
-    background-position: center;
+.button_ico__close
+{
+    width: 22px;
+    height: 22px;
+
     border: none;
+    background: url('src/cancelmark.svg') no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
 }
 
-.popup_close_button:active{
-	box-shadow: inset -1px -1px 1px darken($popup_background, 20%);
-} 
+.popup_close_button:active
+{
+    box-shadow: inset -1px -1px 1px darken($popup_background, 20%);
+}
