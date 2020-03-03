@@ -1,4 +1,4 @@
-.popup_wrapper{
+.popup__wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,4 +15,57 @@
     height: 470px;
     border-radius: 8px;
     background-color: $popup_background;
+}
+
+.close_button{
+    position: relative;
+    top: -463px;
+    left: 507px;
+    width: 23px;
+    height: 23px;
+    padding: 0;
+    border: 1px solid $controls_border ;
+    border-radius: 13px;
+    outline: none;
+    background: $popup_background;
+}
+
+.close_button:active{
+    box-shadow: inset -1px -1px 1px darken($popup_background, 20%);
+}
+
+.close_button__ico{
+    width: 22px;
+    height: 22px;
+}
+
+.popup__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 33px;
+}
+
+.popup__header{
+    width: 100%;
+    height: 64px;
+    margin: 0;
+
+    &_line{
+        width: 100%;
+        height: 8px;
+        margin: 0;
+        border-radius: 8px 8px 0 0;
+        background: linear-gradient(to top, $topline_gradient__1, $topline_gradient__2);
+    }
+
+    &_text{
+        margin: 26px 0 3px 0;
+        text-align: center;
+    }
+
+    &_amount{
+        color: $controls_exec_border;
+    }
 }

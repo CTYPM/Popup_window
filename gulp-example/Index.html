@@ -7,44 +7,44 @@
 	<title>Popup menu</title>
 </head>
 <body>
-	<div class="popup_wrapper">
+	<div class="popup__wrapper">
 	<div class="popup">
-		<div class="popup_header">
-			<div class="popup_header__line"></div>
-			<p class="popup_header__text">You're going to change access to <span class="popup_header__number">1</span> object(s).</p>
+		<div class="popup__header">
+			<div class="popup__header_line"></div>
+			<p class="popup__header_text">You're going to change access to <span class="popup__header_amount">1</span> object(s).</p>
 		</div>
 		<div class="container">
 			<fieldset class="fieldset">
 				<p class="fieldset_text">Change owner</p>
-				<div class="select_wrapper select_wrapper__big">
-					<select class="select_field" name="select_owner" id="select_owner">
+				<div class="select__wrapper select__wrapper--big">
+					<select class="select" name="select_owner" id="select_owner">
     					<option selected value="Owner__1">smart</option>
     					<option value="Owner__2">dolor</option>
     					<option value="Owmer__3">sit amet</option>
 					</select>
 				</div>
-				<button class="main_button main_button__execute short_button" id="button__apply">Apply</button>
+				<button class="button button--execute button--short" id="button__apply">Apply</button>
 			</fieldset>
 
 			<fieldset class="fieldset">
 				<p class="fieldset_text">Add users or groups</p>
-				<div class="select_wrapper select_wrapper__small">
-					<select class="select_field" name="select_user" id="select_user">
+				<div class="select__wrapper select__wrapper--small">
+					<select class="select" name="select_user" id="select_user">
 					 	<option value="user__1" selected>User</option>
     					<option value="user__2">Lorem ipsum</option>
 					</select>
 				</div>
-				<input type="text" class="input_field">
-				<div class="input_warning_wrapper ">
-					<div class="input_warning_img icon-warning_mark"></div>
+				<input type="text" class="input">
+				<div class="input_warning__wrapper ">
+					<div class="input_warning__img icon--warning"></div>
 				</div>
-				<div class="select_wrapper select_wrapper__small">
-					<select class="select_field" name="select_action" id="select_action">
+				<div class="select__wrapper select__wrapper--small">
+					<select class="select" name="select_action" id="select_action">
 					 	<option value="action_1" selected>Read</option>
     					<option value="action_2">Edit</option>
 					</select>
 				</div>
-				<button class="main_button main_button__execute short_button" id="button__add" disabled>Add</button>				
+				<button class="button button--execute button--short" id="button__add" disabled>Add</button>				
 			</fieldset>
 			<table class="table">
 				<col class="table__col1">
@@ -53,54 +53,54 @@
 				<col class="table__col4">
 				<col class="table__col5">
 				<tr>
-					<th class="table__head table_head__first_cell"><div class="ico__check1 table_ico standart_ico"></div></th>
+					<th class="table__head table_head__first_cell"><div class="icon--check1 table__icon icon--standart"></div></th>
 					<th class="table__head">Type</th>
 					<th class="table__head">Name</th>
 					<th class="table__head">Access</th>
 				</tr>
 				<tr>
-					<td class="table__cell table__first_cell"><div class="ico__check1 table_ico standart_ico"></div></td>
-					<td class="table__cell table__second_cell"><div class="ico__type1 table_ico standart_ico"></div></td>
+					<td class="table__cell table__first_cell"><div class="icon--check1 table__icon icon--standart"></div></td>
+					<td class="table__cell table__second_cell"><div class="icon--type1 table__icon icon--standart"></div></td>
 					<td class="table__cell">admins</td>
 					<td  class="table__cell"><a href="#" class="table_access__ref">Read</a></td>
 					<td class="table__cell table__fifth_cell">
-						<button class="table_button"><div class="ico__edit table_ico standart_ico"></div>
+						<button class="table_button"><div class="icon--edit table__icon icon--standart"></div>
 					</td>
 				</tr>
 				<tr>
-					<td class="table__cell table__first_cell"><div class="ico__check1 table_ico standart_ico"></div></td>
-					<td class="table__cell table__second_cell"><div class="ico__type2 table_ico standart_ico"></div></td>
+					<td class="table__cell table__first_cell"><div class="icon--check1 table__icon icon--standart"></div></td>
+					<td class="table__cell table__second_cell"><div class="icon--type2 table__icon icon--standart"></div></td>
 					<td class="table__cell">akudimov</td>
 					<td class="table__cell"><a href="#" class="table_access__ref">Read</a></td>
 					<td class="table__cell table__fifth_cell">
-						<button class="table_button"><div class="ico__cancel table_ico big_ico"></div>
+						<button class="table_button"><div class="icon--cancel table__icon icon--big"></div>
 					</td>
 				</tr>
 						
 					<tr>
-					<td class="table__cell table__first_cell"><div class="ico__check1 table_ico standart_ico"></div></td>
-					<td class="table__cell table__second_cell"><div class="ico__type2 table_ico standart_ico"></div></td>
+					<td class="table__cell table__first_cell"><div class="icon--check1 table__icon icon--standart"></div></td>
+					<td class="table__cell table__second_cell"><div class="icon--type2 table__icon icon--standart"></div></td>
 					<td class="table__cell">smart</td>
 					<td class="table__cell"><a href="#" class="table_access__ref">Edit</a></td>
 				</tr>	
 				<tr>
-					<td class="table__cell table__first_cell"><div class="ico__check1 table_ico standart_ico"></div></td>
-					<td class="table__cell table__second_cell"><div class="ico__type2 table_ico standart_ico"></div></td>
+					<td class="table__cell table__first_cell"><div class="icon--check1 table__icon icon--standart"></div></td>
+					<td class="table__cell table__second_cell"><div class="icon--type2 table__icon icon--standart"></div></td>
 					<td class="table__cell">onovicova</td>
 					<td class="table__cell"><a href="#" class="table_access__ref">Edit</a></td>
 				</tr>							
 			</table>
 		</div>
 		
-		<div class="footer">
-			<button class="main_button main_button__execute first_button" id="button__save">
-				<div class="ico__save button_ico big_ico"></div>Save</button>
-			<button class="main_button" id="button__cancel">
-				<div class="ico__cancel button_ico big_ico"></div>Cancel</button>
+		<div class="popup__footer">
+			<button class="button button--execute button--first" id="button__save">
+				<div class="icon--save button__icon icon--big"></div>Save</button>
+			<button class="button" id="button__cancel">
+				<div class="icon--cancel button__icon icon--big"></div>Cancel</button>
 		</div>
 					
 		<button class="close_button">
- 			<div class="ico__cancel close_button__ico small_ico">
+ 			<div class="icon--cancel close_button__ico icon--small">
 		</button>
 	</div>
 	</div>

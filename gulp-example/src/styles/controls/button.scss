@@ -1,4 +1,4 @@
-.main_button{
+.button{
     line-height: 30px;
     color: $text_color;
     position: relative;
@@ -6,49 +6,37 @@
     height: 30px;
     margin: 0 0 0 10px;
     padding: 0;
+    cursor: pointer;
     border: 1px solid $controls_border ;
     border-radius: 5px;
     outline: none;
     background: linear-gradient(to top, $control_gradient__1, $control_gradient__2);
 }
 
-.main_button:active{
+.button:active{
     background: linear-gradient(to bottom, $control_gradient__1, $control_gradient__2);
 }
 
-.main_button__execute{
+.button--execute{
     border: 1px solid $controls_exec_border;
     background: linear-gradient(to top, $control_exec_gradient__1, $control_exec_gradient__2);
 }
 
-.main_button__execute:active{
+.button--execute:active{
     background: linear-gradient(to bottom, $control_exec_gradient__1, $control_exec_gradient__2);
 }
 
-.main_button__execute:disabled{
+.button--execute:disabled{
     color: lighten($text_color, 20%);
     border: 1px solid lighten($controls_exec_border,10%);
     background: linear-gradient(to top, lighten($control_exec_gradient__1, 10%), lighten($control_exec_gradient__2, 10%));
 }
 
-.short_button{
+.button--short{
     width: 55px;
 }
 
-.table_button{
-    width: 44px;
-    height: 33px;
-    border: none;
-    outline: none;
-    background: $table_background;
-    box-shadow: none;
-}
-
-.table_button:active{
-    box-shadow: inset -1px -1px 1px darken($table_background, 20%);
-}
-
-.button_ico{
+.button__icon{
     position: relative;
     top: 2px;
     left: -3px;
@@ -58,6 +46,6 @@
     margin: 0;
 }
 
-.first_button{
+.button--first{
     margin-left: 0;
 }

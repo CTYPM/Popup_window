@@ -16,6 +16,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon--warning {
+  background-image: url(png/sprite.png);
+  background-position: -32px -64px;
+  width: 32px;
+  height: 28px;
+}
 .icon-arrow_down {
   background-image: url(png/sprite.png);
   background-position: 0px 0px;
@@ -57,10 +63,4 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: 0px -64px;
   width: 32px;
   height: 32px;
-}
-.icon-warning_mark {
-  background-image: url(png/sprite.png);
-  background-position: -32px -64px;
-  width: 32px;
-  height: 28px;
 }

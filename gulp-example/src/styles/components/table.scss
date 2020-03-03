@@ -56,7 +56,7 @@
     border-bottom: 1px dotted $text_color;
 }
 
-.table_ico{
+.table__icon{
     position: relative;
     top: 1px;
     display: inline-block;
@@ -67,4 +67,18 @@
 
 .table__fifth_cell{
     padding: 0;
+}
+
+.table_button{
+    width: 44px;
+    height: 33px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: $table_background;
+    box-shadow: none;
+}
+
+.table_button:active{
+    box-shadow: inset -1px -1px 1px darken($table_background, 20%);
 }

@@ -1,10 +1,16 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var spritesmith = require('gulp.spritesmith');
+var autoprefixer = require('gulp-autoprefixer');
+
 
 gulp.task('sass', function(){
   return gulp.src('./src/style.scss')
     .pipe(sass()) // Using gulp-sass
+    .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
     .pipe(gulp.dest('./dist'))
 });
 
@@ -27,4 +33,4 @@ gulp.task('sprite', function() {
 	});
 });
 
-gulp.task('default', gulp.parallel('sass', 'sprite','watch'));
+gulp.task('default', gulp.parallel('sass', 'sprite', 'watch'));
